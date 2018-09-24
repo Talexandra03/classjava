@@ -28,9 +28,25 @@ var edad=41;
         console.log (dias[i]);
     }
     */
-    function suma(num1,num2){
+    /*function suma(num1,num2){
         var resultado= num1+num2;
         return resultado;
     }
     var res=suma(88,55);
-    console.log(res);
+    console.log(res);*/
+
+        //IVA
+    function preCio(num1,iva){
+        var iva=num1*(iva/100);
+        return iva;
+    }
+    var resul = preCio(25000,19);
+    console.log(resul);
+
+    //IVA2
+    function IVA(precio_producto){
+        var iva_producto=precio_producto*0.19;
+        return iva_producto;
+    }
+    var resul = IVA(25000);
+    console.log(resul);
