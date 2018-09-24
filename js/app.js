@@ -50,3 +50,4 @@ var edad=41;
     }
     var resul = IVA(25000);
     console.log(resul);
+    
