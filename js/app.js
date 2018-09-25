@@ -33,14 +33,14 @@ var edad=41;
         return resultado;
     }
     var res=suma(88,55);
-    console.log(res);*/
+    console.log(res);
 
         //IVA
-    function preCio(num1,iva){
+    function precio(num1,iva){
         var iva=num1*(iva/100);
         return iva;
     }
-    var resul = preCio(25000,19);
+    var resul = precio(25000,19);
     console.log(resul);
 
     //IVA2
@@ -50,4 +50,36 @@ var edad=41;
     }
     var resul = IVA(25000);
     console.log(resul);
-    
+   
+
+
+var titulos=document.getElementsByTagName('h1');
+console.log(titulos^[0]);
+
+var clasetexto= document.getElementsByClassName('texto');
+console.log(clasetexto);
+
+var sede= document.getElementById('sede');
+console.log(sede);
+ */
+
+ /*Formulario*/
+  function iva (precio_producto,porcentaje_iva){
+   var iva_producto= precio_producto*(porcentaje_iva/100);
+   return iva_producto;
+  }
+   function calcular_iva(){
+       var precio=parseInt(document.getElementById('precio').value);
+       var porcentaje_iva=parseInt(document.getElementById('iva').value);
+       var resultado=iva(precio,porcentaje_iva);
+       var salida= document.getElementById('resultado');
+       /*var texto=document.createTextNode(resultado);//span
+       salida.appendChild(texto);span*/
+       salida.value=resultado;/*input*/
+       console.log(resultado);/*input*/
+
+       
+       /* console.log(precio);
+       console.log(porcentaje_iva);*/
+      
+   }
